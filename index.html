@@ -29,6 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+	flex-wrap: wrap;
 }
 
 .header-fixed .hero-logo {
@@ -67,7 +68,7 @@
 }	
 		/* Ajustar espaçamento no topo da página */
 	body {
-	    padding-top: 50px;
+	    padding-top: 85px;
 	}
 
 	@media (max-width: 768px) {
@@ -95,12 +96,15 @@
         padding: 5px 12px;
         font-size: 0.9em;
     }
+ body {
+        padding-top: 110px;  /* ← ADICIONE ESTA LINHA */
+    }
 }
 	/* REMOVA O ARQUIVO .urgency-bar DO HTML - A BARRA AZUL DEVE SER DELETADA */
 
         .urgency-bar { background: linear-gradient(135deg,#263a90 0%,#1a2866 100%); color:white; text-align:center; padding:10px 20px; font-weight:bold; font-size:14px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.2); }
         .countdown { display:inline-block; background: rgba(253,204,12,0.3); padding:4px 12px; border-radius:20px; margin-left:10px; font-size:16px; color:#fdcc0c; font-weight:bold; }
-        .viewers-bar { background: #fdcc0c; color: #263a90; text-align: center; padding: 8px 20px; font-weight: 600; font-size: 14px; width: 100%; margin: 0;}
+        .viewers-bar { background: #fdcc0c; color: #263a90; text-align: center; padding: 8px 20px; font-weight: 600; font-size: 14px; width: 100%; margin: 0;order: 3; border-top: 1px solid rgba(38, 58, 144, 0.1);}
 		@media (max-width: 768px) {.viewers-bar {top:70px;}}
 		.pulse-dot { display:inline-block; width:8px; height:8px; background:#e74c3c; border-radius:50%; margin-right:8px; animation:pulse-dot 2s infinite; }
         @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(1.2);} }
@@ -1111,6 +1115,7 @@ fetch('https://meta-api-chi.vercel.app/api/meta', {
 </body>
 
 </html>
+
 
 
 
