@@ -1095,10 +1095,23 @@ window.addEventListener('load', () => {
     showNotifications();
 });
     </script>
-
+<script>
+// Chama a API de conversões quando a página carregar
+fetch('https://meta-api-chi.vercel.app/api/meta', {
+  method: 'GET',
+})
+.then(response => response.json())
+.then(data => {
+  console.log('Evento enviado para Meta API:', data);
+})
+.catch(error => {
+  console.error('Erro ao enviar evento:', error);
+});
+</script>
 </body>
 
 </html>
+
 
 
 
