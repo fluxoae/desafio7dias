@@ -238,7 +238,7 @@
         .app-mockup-col { position: relative; display: flex; justify-content: center; align-items: center; }
         .phone-showcase { width: 100px; height: 200px; background: linear-gradient(145deg, #1a1a1a, #2d2d2d); border-radius: 30px; padding: 10px; box-shadow: 0 30px 70px rgba(0,0,0,0.4), inset 0 0 0 3px rgba(255,255,255,0.1); position: relative; transition: transform 0.4s ease; }
         .phone-showcase:hover { transform: translateY(-10px) scale(1.02); }
-        .phone-screenshot { width: 100%; height: 100%; object-fit: cover; border-radius: 32px; display: block; }
+        .phone-screenshot { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; display: block; transform: scale(1,05)}
         .phone-glow { position: absolute; inset: -30px; background: radial-gradient(circle at center, rgba(253, 204, 12, 0.15) 0%, transparent 70%); pointer-events: none; opacity: 0; transition: opacity 0.4s ease; }
         .phone-showcase:hover .phone-glow { opacity: 1; }
         .app-info-col { position: relative; }
@@ -1065,6 +1065,7 @@ fetch('https://meta-api-chi.vercel.app/api/meta', {
 </body>
 
 </html>
+
 
 
 
